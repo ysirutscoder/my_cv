@@ -1,0 +1,26 @@
+.header {
+    background-color: #c0c5cb;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 4px #b7c2c1;
+    z-index: 3;
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+    @include  min($mobile-landscape-and-up) {
+        background-color: #cdd2d8;
+    }
+
+    @include  min($desktop-s-and-up) {
+        background-color: #e0e5eb;
+    }
+
+}
+
+.main-nav__item{
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    padding-right: 30px;
+}

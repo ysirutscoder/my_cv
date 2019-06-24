@@ -1,0 +1,19 @@
+// Font
+$basic-font-size: 16px;
+$basic-font-family: 'Proxima Nova', Arial, sans-serif;
+
+// Breakpoints
+$mobile-landscape-and-up: 576px; // sm in bootstrap grid
+$tablet-portrait-and-up: 768px; // md in bootstrap grid
+$tablet-landscape-and-up: 992px; // lg in bootstrap grid
+$desktop-s-and-up: 1200px; // xl in bootstrap grid
+$desktop-m-and-up: 1360px;
+$desktop-l-and-up: 1440px;
+
+// Colors
+$white: white;
+$black: #333;
+
+// Transition
+$transition-function: ease;
+$transition-duration: 250ms;

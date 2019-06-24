@@ -1,0 +1,15 @@
+include ../mixins/icon
+include ../mixins/image
+
+block variables
+
+doctype html
+html(lang="en")
+    include ../includes/head
+    body
+        include ../sections/header
+        main
+            block content
+        include ../sections/footer
+
+        script(src=`js/bundle.min.js?stamp=${stamp}`)

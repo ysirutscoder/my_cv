@@ -1,0 +1,23 @@
+#experience{
+  h2,p,h3,li,ul{
+    color: dimgrey;
+    font-family: "Courier New";
+  }
+  p{font-size: 20px;
+  }
+  ul{
+    font-size : 25px;
+  }
+  @media screen and (max-width: 576px) {
+    h2{
+      font-size: 25px;
+    }
+    .js-tab.tab{
+      flex-direction: column;
+      text-align: center;
+    }
+    p,ul,li{
+      font-size:15px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+#contacts{
+h2,ul,p,a{
+  color: dimgrey;
+  font-family: "Courier New";
+}
+  h2{
+    font-size: 40px;
+  }
+  p{
+    font-size :30px;
+  }
+  li{
+    list-style-type: none;
+    padding:20px 60px ;
+    display: inline;
+
+  }
+  ul{
+    text-align: center;
+  }
+  a,li {
+    font-size: 30px;
+    color:darkslategrey;
+    &:hover {
+      text-decoration: underline;
+      cursor: alias;
+    }
+  }
+  @media screen and (max-width: 576px){
+    h2{font-size: 25px;}
+    p,ul,li,a{
+      font-size:15px;
+    }
+    li,ul{
+      padding: 0 0;
+    }
+  }
+}

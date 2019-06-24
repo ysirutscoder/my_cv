@@ -1,0 +1,52 @@
+@mixin min($breakpoint) {
+
+    @if $breakpoint == $mobile-landscape-and-up {
+        @media (min-width: $mobile-landscape-and-up) {
+            @content;
+        }
+    } @else if $breakpoint == $tablet-portrait-and-up {
+        @media (min-width: $tablet-portrait-and-up) {
+            @content;
+        }
+    } @else if $breakpoint == $tablet-landscape-and-up {
+        @media (min-width: $tablet-landscape-and-up) {
+            @content;
+        }
+    } @else if $breakpoint == $desktop-s-and-up {
+        @media (min-width: $desktop-s-and-up) {
+            @content;
+        }
+    } @else if $breakpoint == $desktop-m-and-up {
+        @media (min-width: $desktop-m-and-up) {
+            @content;
+        }
+    } @else if $breakpoint == $desktop-l-and-up {
+        @media (min-width: $desktop-l-and-up) {
+            @content;
+        }
+    }
+}
+
+@mixin reset-list() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+@mixin box($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: quote($font-name);
+        src:
+                url('../fonts/' + $file-name + '.woff2') format('woff2'),
+                url('../fonts/' + $file-name + '.woff') format('woff');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}

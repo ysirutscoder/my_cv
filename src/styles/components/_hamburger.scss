@@ -1,0 +1,60 @@
+.hamburger {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+
+    @include min($tablet-landscape-and-up) {
+        display: none;
+    }
+
+    &__icon {
+        position: relative;
+        height: 3px;
+        width: 100%;
+        background: #575656;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 30px;
+            background: #575656;
+            position: absolute;
+            top: -8px;
+            left: 0;
+            transition: all 200ms ease;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 30px;
+            background: #575656;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            transition: all 200ms ease;
+        }
+    }
+
+    &.is-active {
+        .hamburger__icon {
+            background: rgba(green, 0);
+
+            &::before {
+                transform: translate3d(0, 8px, 0) rotate(-45deg);
+                transition: all 200ms ease;
+            }
+
+            &::after {
+                transform: translate3d(0, -8px, 0) rotate(45deg);
+                transition: all 200ms ease;
+            }
+        }
+    }
+}
