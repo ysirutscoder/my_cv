@@ -1,0 +1,19 @@
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 250ms;
+}
+
+.lazyload--absolute.lazyloaded {
+    position: absolute;
+}
+
+.lazyload--md-absolute.lazyloaded {
+    @include min(md) {
+        position: absolute;
+    }
+}

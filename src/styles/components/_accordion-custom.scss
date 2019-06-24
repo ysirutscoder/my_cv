@@ -1,0 +1,41 @@
+.accordion {
+    display: block;
+    overflow: hidden;
+
+    &__item {
+        background-color: #eaeff5;
+    }
+
+    &__header {
+        position: relative;
+        z-index: 2;
+        padding: 5px 0;
+        background-color: #eaeff5;
+        cursor: pointer;
+
+        h4 {
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        &.isActive h4 {
+            font-weight: 700;
+        }
+    }
+
+    &__content {
+        margin-bottom: 0;
+        background-color: #eaeff5;
+        height: 0;
+        position: relative;
+        overflow-y: hidden;
+        transition: all .3s linear;
+
+
+        &.isActive {
+            height: 130px;
+            overflow-y: visible;
+            transition: all .3s linear;
+        }
+    }
+}
