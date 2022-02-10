@@ -45,7 +45,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-terser": "^1.1.7",
     "gutil": "^1.6.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "postcss-preset-env": "^6.6.0",
     "rollup": "^1.4.1",
     "rollup-plugin-commonjs": "8.3.0",
