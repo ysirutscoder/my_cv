@@ -57,6 +57,6 @@
     "@babel/register": "^7.4.4",
     "babel-register": "^6.26.0",
     "lazysizes": "^4.1.6",
-    "terser": "^3.16.1"
+    "terser": "^4.8.1"
   }
 }
